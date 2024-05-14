@@ -3,10 +3,10 @@
 ## 檢查設備名稱
 ```
 $ cd /dev/
-/dev$ ls | grep ttyU
+/dev$ ls | grep -e ttyU -e ttyA
 ```
 
-OUTPUT：ttyUSB0
+OUTPUT：ttyUSBx or ttyACMx  **其中「x」代表serial prot的編號**
 
 ## Serial port setting
 ```
@@ -15,7 +15,7 @@ $ sudo chmod 777 /dev/ttyUSB0
 
 ## 查看設備權限
 ```
-$ ls -all /dev
+$ ls -l /dev/ttyUSB0
 ```
 crwxrwxrwx   1 root dialout 188,     0 May 14 13:21 ttyUSB0
 
