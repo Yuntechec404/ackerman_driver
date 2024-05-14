@@ -46,8 +46,9 @@ source ~/.bashrc
 ```
 
 ## 修改code 設備名稱
-根據上述指令確認設備名稱
-開啟檔案 /Home/workspace/src/turn_on_wheeltec_robot/launch/include/base_serial.launch
+1.根據上述指令確認設備名稱
+
+2.開啟路徑檔案 /Home/workspace/src/turn_on_wheeltec_robot/launch/include/base_serial.launch
 ```xml
   <node pkg="turn_on_wheeltec_robot" type="wheeltec_robot_node" name="wheeltec_robot" output="screen" respawn="false">
     <param name="usart_port_name"    type="string" value="/dev/${你的設備名稱}"/>  
