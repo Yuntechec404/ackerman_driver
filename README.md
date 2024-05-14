@@ -25,7 +25,7 @@ cd ackerman_ws
 
 ## 下載
 ```
-git clone  src
+git clone https://github.com/Yuntechec404/ackerman_driver.git src
 ```
 ## 編譯
 ```
