@@ -17,6 +17,10 @@ $ sudo chmod 777 /dev/ttyUSB0
 ```
 $ ls -all /dev
 ```
+crwxrwxrwx   1 root dialout 188,     0 May 14 13:21 ttyUSB0
+
+c:一個字符設備。
+rwxrwxrwx:前三個字元表示擁有者的權限，中間三個字元表示所屬群組的權限，最後三個字元表示其他使用者的權限。每組權限都是rwx，意味著所有者、所屬群組和其他使用者都具有讀取、寫入和執行（如果是可執行檔案）的權限。
 ## 建立工作區
 ```
 mkdir -p ackerman_ws
