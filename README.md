@@ -29,11 +29,11 @@ cd ackerman_ws
 
 ## 下載
 ```
-git clone https://github.com/Yuntechec404/ackerman_driver.git src
+/ackerman_ws$ git clone https://github.com/Yuntechec404/ackerman_driver.git src
 ```
 ## 編譯
 ```
-catkin_make
+/ackerman_ws$ catkin_make
 ```
 ## 環境變數
 將環境變數新增至.bashrc，下次開啟將自動設定
@@ -57,8 +57,8 @@ source ~/.bashrc
 ## 啟動底盤
 ```
 $ cd ackerman_ws/devel/
-$ source setup.bash
-$ roslaunch turn_on_wheeltec_robot base_serial.launch
+ackerman_ws/devel/$ source setup.bash
+ackerman_ws/devel/$ roslaunch turn_on_wheeltec_robot base_serial.launch
 ```
 # 鍵盤控制
 安裝
